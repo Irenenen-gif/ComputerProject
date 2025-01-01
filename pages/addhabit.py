@@ -18,3 +18,6 @@ if button('Add habit'):
 subheader('Your new habits:')
 for habit, days in session_state.habits.items():
     checkbox(f"{habit} for {days} days")
+
+subheader(":blue[Sleep:]")
+hours_you_slept=select_slider("How many hours have you slept?",options=range(25))
